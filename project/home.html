@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Tanzschule Sommer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+            crossorigin="anonymous"></script>
+    <link rel="website icon" type="png" href="./img/tsLogoWhite.png">
+
+    <script>
+        let timestamp = new Date().getTime();
+        let link = document.createElement('link');
+        link.rel = 'stylesheet';
+        let script = document.createElement('script');
+        script.defer = true;
+
+        // relative path to your files
+        link.href = 'index.css' + `?${timestamp}`;
+        script.src = 'index.js' + `?${timestamp}`;
+
+        document.head.appendChild(link);
+        document.head.appendChild(script);
+    </script>
+
+</head>
+<body>
+
+<nav>
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="./home.html" role="tab"
+               aria-controls="pills-home" aria-selected="true"><img src="./img/Logos/white/homeWhite.png"></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="pills-course-tab" data-toggle="pill" href="./course.php" role="tab"
+               aria-controls="pills-course" aria-selected="false"><img src="./img/Logos/white/courseWhite.png"></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="./profile.php" role="tab"
+               aria-controls="pills-profile" aria-selected="false"><img src="./img/Logos/white/profileWhite.png"></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="pills-timetable-tab" data-toggle="pill" href="./timetable.php" role="tab"
+               aria-controls="pills-profile" aria-selected="false"><img src="./img/Logos/white/timetableWhite.png"></a>
+        </li>
+        <li class="nav-item" id="logo-nav" float-start>
+            <a class="nav-link" id="pills-logo-tab"><img src="./img/Logos/white/tsLogoWhite.png" alt=""></a>
+        </li>
+    </ul>
+</nav>
+
+<div id="content">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="img/Tanzbilder_slideshow/Ballett_slideshow.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="img/Tanzbilder_slideshow/Ballroom_slideshow.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="img/Tanzbilder_slideshow/Lablast_slideshow.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="img/Tanzbilder_slideshow/Urban_slideshow.png" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    <br><br>
+    <div id="infoText">
+        <p id="h">TANZEN LERNEN MIT DEN PROFIS</p>
+        <hr>
+        <div id="txtContainer">
+            <div id="txtContainerTxt">
+                <p>Die Tanzschule Sommer ist ein Ort der Inspiration, der Faszination und der Motivation, der Leichtigkeit und der
+                    Beschwingtheit. Als Opernball Tanzschule sehen wir uns als innovatives Unternehmen mit Anspruch auf
+                    perfekte fachliche
+                    und individuelle Betreuung. Von Grundkurs bis Technik Club, von Discofox bis Tango Argentino, ob
+                    LaBlast, Classic oder
+                    Urban. Zu unserem Team zählen die besten TänzerInnen Ihrer Sparte, welche mit Passion ihr Wissen an
+                    erwachsene
+                    weitergeben.</p>
+                <p>Tanzen bildet einen hervorragenden Ausgleich zum stressigen Berufsleben und steigert bewiesenermaßen das
+                    Wohlbefinden. Seit dem Jahr 2015 kann in der Tanzschule Sommer das Tanzbein geschwungen werden. Mit
+                    ihrer Gründung
+                    erfüllten sich Katharina, Matthias und Elisabeth einen lang gehegten Traum. Ziel war es, von Anfang
+                    an alle
+                    Tanzbegeisterten und die, die es noch werden wollen, mit dem Tanzfieber anzustecken und sie bei
+                    ihren ersten Schritten
+                    am Parkett zu begleiten. </p>
+                <p>Somit ist unsere Tanzschule der ideale Ort für alle, die die Freude am Tanzen entdecken oder Ihre vorhandenen Kenntnisse
+                    vertiefen möchten. Wir leben Modernität – nicht nur in unseren Ansichten, sondern auch in unserem
+                    Tanzunterricht und
+                    unserem Umgang untereinander und mit unseren KundInnen. </p>
+            </div>
+            <div id="txtContainerImg"><img src="./img/homePhoto.png"></div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <!--<div id="footerImg"><img src="./img/footer.png"></div>-->
+    <div id="footerTxT">
+        <p id="oefnungP" class="h4">Öffnungszeiten</p>
+        <p id="standortP" class="h4">Standort</p>
+        <div id="fTXTTime">
+            <div id="days">
+                <div><p>Mo. - Do.</p></div>
+                <br>
+                <div><p>Fr. </p></div>
+                <br>
+                <div><p>Sa.</p></div>
+            </div>
+            <div id="time">
+                <div><p>09.00 - 12.00</p>
+                    <p>13:00 - 22.00</p></div>
+                <div><p>13:00 - 23.00</p></div>
+                <br>
+                <div><p>09:00 - 12.00</p>
+                    <p>17:00 - 22.00</p></div>
+            </div>
+        </div>
+        <div id="fTXTOther">
+            <div id="stand">
+                <div>
+                    <p>Bergstraße 12</p>
+                    <p>4073 Unterfeld</p>
+                </div>
+            </div>
+            <div id="contact">
+                <div>
+                    <p id="contactP" class="h4">Kontakt</p>
+                    <p>+43 999 123456</p>
+                    <p>ts.sommer@email.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

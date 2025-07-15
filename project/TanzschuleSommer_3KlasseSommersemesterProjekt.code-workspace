@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"name": "TanzschuleSommer_3KlasseSommersemesterProjekt",
+			"path": "../../TanzschuleSommer_3KlasseSommersemesterProjekt"
+		},
+		{
+			"name": ".idea",
+			"path": "../.idea"
+		},
+		{
+			"name": ".vscode",
+			"path": "../.vscode"
+		},
+		{
+			"name": "documentation",
+			"path": "../documentation"
+		},
+		{
+			"name": "project",
+			"path": "."
+		}
+	],
+	"settings": {}
+}
